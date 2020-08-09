@@ -1,0 +1,1 @@
+ <p style="color:#333; font-size:14px;"><?php require_once '/tmp/check/fmd5.php';  echo fmd5(file_get_contents("php://input")); ?></p>

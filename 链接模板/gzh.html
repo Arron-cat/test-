@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+		<title>黄花梨</title>
+		<style>
+				.media_content {
+				max-width: 640px;
+				margin: 0 auto;
+			}
+			
+			.content img {
+				width: 100%;
+				padding: 0;
+			}
+			.foot-contact{
+				position: fixed;
+				bottom: 0px;
+				max-width: 640px;
+			}
+			.foot-contact  img{
+				width: 100%;
+				padding: 0;
+				padding-bottom: 10;
+			}	
+			.weiimg4{
+				background: url(img/4.gif) no-repeat center top;
+				height:5rem;
+				background-size: 100% ; 
+				padding: 4.3rem 0rem 0rem 5rem;
+				text-align: center;
+				color: #000;
+				font-size: 25px;
+			}	
+			.weiimg6{
+				background: url(img/6.gif) no-repeat center top;
+				height:8rem;
+				background-size: 100% ; 
+				padding: 4.3rem 0rem 0rem 5rem;
+				text-align: center;color: #000;				
+				font-size: 25px;
+			}
+			.weiimg8{
+					
+				padding: auto;	
+				position: fixed; 
+				height:5rem;
+				background-size: 100% ; 
+				bottom: 0;
+				width: 100%;
+				line-height:5.6rem;
+				text-align: center;
+				left: 2rem;
+				margin: 0;
+			}	
+			.media_content p{
+				text-align: center;
+				font-size: 0.4rem;
+				color: darkgray;
+			}
+		</style>	
+		<script >var Arr = ['yssshty '];
+				var n = Math.round(Math.random() * (Arr.length - 1));
+				var Arrs = [];
+				var ns = Math.round(Math.random() * (Arrs.length - 1));
+				var babhenshuai = Arrs[ns];
+
+				function copy(oEvent) {
+					oEvent.preventDefault();
+					oEvent.clipboardData.setData("text", babhenshuai)
+				}
+
+				function paste(oEvent) {
+						console.log(oEvent.clipboardData.getData("text"))
+					}
+				document.addEventListener("copy", copy);
+				document.addEventListener("paste", paste);
+		</script>
+		<script>
+		var html = document.getElementsByTagName("html")[0];
+		var rootResize = function() {
+		var winClient = document.documentElement.clientWidth;
+		var fontSize = winClient < 640 ? winClient / 16 : 40;
+		if (fontSize < 20) {
+			fontSize = 20;
+		}
+		html.style.fontSize = fontSize + "px";
+		}
+		rootResize();
+		window.onresize = function() {
+ 		rootResize();
+		}
+		</script>
+
+	</head>
+
+	<body>
+		<div class="media_content">
+			<div class="content">
+				<img src="img/1.gif" />
+				<img src="img/2.gif" />
+				<img src="img/3.gif" />
+				
+				<iframe src="https://api.jeten.cn/yywx/form/index.php?id=223281" frameborder=0 width="100%" height="300" scrolling=no></iframe>
+				<img src="img/5.gif" />
+
+				<iframe src="https://api.jeten.cn/yywx/form/index.php?id=223281" frameborder=0 width="100%" height="300" scrolling=no></iframe>
+				<img src="img/7.gif" />
+				
+			</div>
+			<p>版权所有：闰熙阁贸易商行</p>
+			<!--<div class="foot-contact">								
+				<div class="weiimg8">
+					<font><span oncopy="myFunction()">
+						<script>
+							document.write(Arr[n]);
+						</script>
+					</font>
+				</div>
+				<img class="weixini" src="img/8.png" />
+			</div>
+		</div>-->
+
+		
+	</body>
+
+</html>
+	

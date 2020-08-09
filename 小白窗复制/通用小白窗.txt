@@ -1,0 +1,53 @@
+<script>
+function myFunction() {
+	$("#y-lex").fadeIn();
+}
+</script>
+  
+<script>
+function y_close() {
+	window.parent.post_toutiao();
+	$("#y-lex").fadeOut();
+	return true;
+}
+
+function closeProp() {
+    $("#y-lex").fadeOut();
+}
+</script>
+
+<style>.qaik{display:none;background:rgba(0,0,0,.7);position:fixed;z-index:999999;top:0;left:0;width:100%;height:100%;text-align:center;line-height: 2.5em;} .qaik div{margin-top:15px} .qaik .oiak{background:#fff;position:absolute;margin:auto;right:0;bottom:150px;left:0;width:280px;border-radius:5px;} .qaik .qka{font-size:20px;font-weight:bold;} .qaik .koka{border-top:1px solid #f1f1f1;padding-top:8px;color:#3AB1FF;font-size:22px;} .qaik .koka p{ width: 100%; display: flex; align-items: center; justify-content: center;} .qaik .koka p a{ display: block; width: 48%; line-height: 40px; font-size: 20px; text-align: center;text-decoration: none ;color:black;} .qaik .koka p a:nth-child(1){ border-right:1px solid #f1f1f1;} .qaik .wwwka{font-size:14px;} .qaik .a_close{ position: absolute; right: 0px; top: 0px; font-size: 30px; line-height: 30px; color: #333; width: 30px; text-align: center;} .qaik .oiak_2{ bottom: 19%; width: 94%; } .qaik .oiak_2 .wwwka{font-size:16px;}</style>
+
+<div class="qaik" id="y-lex">
+  <div class="oiak oiak_2">
+    <div class="qka">提示ʾ</div>
+    <div class="wwwka">微信号已复制好，请在微信粘贴搜索</div>
+    <div class="koka">
+      <p>
+        <a href="javascript:;" class="a_quxiao" onclick="closeProp()">取消</a>
+        <a href="javascript:;" class="a_queren" onclick="y_close()">确认</a></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+function myFunction() {
+	$("#y-lex").fadeIn();
+}
+</script>
+  
+<script>
+function y_close() {
+	meteor.track("form", {convert_id: "1673089503547396"});
+	$("#y-lex").fadeOut();
+	window.location.href='weixin://';
+}
+
+function closeProp() {
+    $("#y-lex").fadeOut();
+}
+</script>
